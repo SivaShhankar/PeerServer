@@ -2,7 +2,7 @@ var ip = require('ip');
 var moment = require('moment');     // manipulate, validate date time
 var PeerServer = require('peer').PeerServer;
 
-var port = 443;
+var port = process.env.PORT || 3000;
 var server = new PeerServer({ port: port, allow_discovery: true });
 var connected = [];
 
