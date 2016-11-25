@@ -70,12 +70,22 @@ console.log('Peer Server running on ' +
   ip.address() + ':' + port ) ;
  console.log('Started @ ' + moment().format('MMMM Do YYYY, h:mm:ss A'));
  
-var http = require("http");
-setInterval(function() {
-    http.get("http://myownpeerjs.herokuapp.com");
-	 http.get("http://mypeerchat.herokuapp.com/");
-	console.log("ping server");
-}, 30000); // every 5 minutes (300000)
+// var http = require("http");
+// setInterval(function() {
+    // http.get("http://myownpeerjs.herokuapp.com");
+	// // http.get("http://mypeerchat.herokuapp.com/");
+	// console.log("Ping Peer Server" +   ' @ ' + moment().format('MMMM Do YYYY, h:mm:ss A'));
+// }, 10000); // every 5 minutes (300000)
 
+// setInterval(function() {
+    // //http.get("http://myownpeerjs.herokuapp.com");
+	 // http.get("http://mypeerchat.herokuapp.com/");
+	// console.log("Ping Chat App"  + ' @ ' + moment().format('MMMM Do YYYY, h:mm:ss A'));
+// }, 10000);
+
+// function pingHeroku() {
+    // peerConnection.socket.send({type: 'ping'});
+    // timeoutID = setTimeout(pingHeroku, 20000);
+// }
 
 
