@@ -3,7 +3,7 @@ var moment = require('moment');     // manipulate, validate date time
 var PeerServer = require('peer').PeerServer;
 
 var port = process.env.PORT || 3000;
-var server = new PeerServer({ port: port, allow_discovery: true });
+var server = new PeerServer({ port: port, allow_discovery: true,proxied: true });
 var connected = [];
 
 // Connect & Disconnect Events will trigger when new user logged in to this sever
